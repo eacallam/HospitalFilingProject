@@ -22,5 +22,12 @@ namespace HospitalFilingProject
             this.employeeNumber = employeeNumber;
             this.specialtyArea = specialtyArea;
         }
+
+        public override void PrintStatus()
+        {
+            Console.Write(this.employeeName + "\t");
+            Console.Write(this.employeeNumber + "\t");
+            Console.Write(this.specialtyArea + "\n");
+        }
     }
 }

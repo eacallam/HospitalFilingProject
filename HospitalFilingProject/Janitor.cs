@@ -31,5 +31,26 @@ namespace HospitalFilingProject
             this.isSweeping = isSweeping;
         }
 
+        public override void PrintStatus()
+        {
+            Console.Write(this.employeeName + "\t");
+            Console.Write(this.employeeNumber + "\t");
+            Console.Write(this.department + "\t");
+            Console.Write(this.isSweeping + "\n");
+        }
+
+        public void SweepingStatus()
+        {
+            if (this.isSweeping == true)
+            {
+                Console.WriteLine(this.employeeName + " is sweeping now.");
+            }
+
+            else
+            {
+                Console.WriteLine(this.employeeName + " is not sweeping now.");
+            }
+        }
+
     }
 }

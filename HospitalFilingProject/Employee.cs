@@ -35,5 +35,13 @@ namespace HospitalFilingProject
             this.employeeName = employeeName;
             this.employeeNumber = employeeNumber;
         }
+
+        //METHODS
+        public virtual void PrintStatus() //don't need to add any action here because won't be calling this particular method
+        {
+            
+        }
+
+        
     }
 }

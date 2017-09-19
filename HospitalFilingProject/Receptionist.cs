@@ -30,5 +30,27 @@ namespace HospitalFilingProject
             this.department = department;
             this.onPhone = onPhone;
         }
+
+        public override void PrintStatus()
+        {
+            Console.Write(this.employeeName + "\t");
+            Console.Write(this.employeeNumber + "\t");
+            Console.Write(this.department + "\t\t");
+            Console.Write(this.onPhone + "\n");
+        }
+
+        public void PhoneStatus()
+        {
+            if (this.onPhone == true)
+            {
+                Console.WriteLine(this.employeeName + " is on the phone now.");
+            }
+
+            else
+            {
+                Console.WriteLine(this.employeeName + " is not on the phone now.");
+            }
+        }
+
     }
 }

@@ -45,7 +45,6 @@ namespace HospitalFilingProject
             {
                 Console.WriteLine(this.employeeName + " is sweeping now.");
             }
-
             else
             {
                 Console.WriteLine(this.employeeName + " is not sweeping now.");
